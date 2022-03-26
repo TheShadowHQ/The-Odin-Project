@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("./table.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.calculator {
+  background-color: black;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+  color: white;
+  border: 1px solid black;
+  border-radius: 1rem;
+  padding: 1rem;
+  margin: 5rem auto;
+  width: 25rem;
+  height: 35rem;
+  display: grid;
+  grid-template-rows: 2fr repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.screen {
+  grid-column: 1 / 5;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  font-size: 5rem;
+  max-width: 24.5rem;
+}
+
+button {
+  font-size: large;
+  border: 1px solid white;
+  background-color: transparent;
+  color: white;
+  border-radius: 1rem;
+}
+
+button:hover {
+  background-color: #2a2a2a;
+  cursor: pointer;
+}
+
+button.clear {
+  color: red;
+}
+
+button.operator {
+  color: orange;
+}
+
+button.equal {
+  background-color: #ff6600;
+}
+
+button.equal:hover {
+  background-color: orange;
+}
