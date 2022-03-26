@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    gap: 5rem;
+}
+
+header {
+    margin-top: 1rem;
+    margin-left: 5rem;
+}
+
+main {
+    margin-top: 1rem;
+}
+
+.grid-container {
+    height: 40rem;
+    width: 40rem;
+    border: 1px solid black;
+    display: inline-grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+}
+
+.square {
+    background-color: white;
+    border: 1px solid black;
+}
