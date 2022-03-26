@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: Roboto, 'Segoe UI', sans-serif;
+    background-color: #121212;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.game-info {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+#title {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.game {
+    display: flex;
+    justify-content: center;
+    gap: 350px;
+}
+
+.player-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.player-container > h3, .computer-container > h3 {
+    text-align: center;
+    font-size: 70px;
+}
+
+.player-choice {
+    display: flex;
+    gap: 50px;
+}
+
+
+.instruction {
+    text-align: center;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+/* Score board */
+.score-board {
+    height: 500px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.player-score, .computer-score {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.result {
+    text-align: center;
+}
+
+.score-board div:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.reset-btn {
+    text-align: center;
+}
+
+
+

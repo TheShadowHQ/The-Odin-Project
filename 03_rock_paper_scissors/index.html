@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/29032ae126.js" crossorigin="anonymous"></script>
+    <script src="./main.js" defer></script> 
+    <title>Rock Paper Scissors</title>
+</head>
+<body>
+    <section class="game-info">
+        <h1 id="title">ROCK PAPER SCISSORS GAME</h1>
+        <div class="game">
+            <div class="player-container">
+                <h3>Player</h3>
+                <div class="player-choice">
+                    <button class="rock">
+                        <i class="fa-solid fa-hand-back-fist fa-5x" ></i>
+                    </button>
+                    <button class="paper">
+                        <i class="fa-solid fa-hand fa-5x"></i>
+                    </button>
+                    <button class="scissors">
+                        <i class="fa-solid fa-hand-scissors fa-5x"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="computer-container">
+                <h3>Computer</h3>
+                <div class="computer-choice">
+
+                </div>
+            </div>
+        </div>
+        <div class="instruction">
+            <p>
+                Choose your weapon<br>
+                First to reach 5 points wins!
+            </p>
+        </div>
+    </section>
+    <section class="score-board">
+        <div class="result"></div>
+        <div>
+            <div class="player-score-wrapper">
+                <p>
+                    Your Score: 
+                    <span class="player-score">0</span>
+                </p>
+            </div>
+            <div class="computer-score-wrapper">
+                <p>
+                    Computer Score: 
+                    <span class="computer-score">0</span>
+                </p>
+            </div>
+        </div>
+        <button class="reset-btn">Play Again</button>
+    </section>
+   
+</body>
+</html>
