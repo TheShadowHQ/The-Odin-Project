@@ -34,36 +34,36 @@
       <div class="form-container">
         <h3 class="margin-left-5">Let's do this!</h3>
         <form class="margin-left-5">
-          <div>
+          <div class="mb-1">
             <label for="firstname">FIRST NAME</label><br />
-            <input type="text" id="firstname" name="firstName" />
+            <input type="text" id="firstname" name="firstName" required />
           </div>
-          <div>
+          <div class="mb-1">
             <label for="lastname">LAST NAME</label><br />
-            <input type="text" id="lastname" name="lastName" />
+            <input type="text" id="lastname" name="lastName" required />
           </div>
-          <div>
+          <div class="mb-1">
             <label for="email">EMAIL</label><br />
-            <input type="e-mail" id="email" name="email" />
+            <input type="e-mail" id="email" name="email" required />
           </div>
-          <div>
+          <div class="mb-1">
             <label for="phone">PHONE NUMBER</label><br />
-            <input type="number" id="phone" name="phoneNumber" />
+            <input type="number" id="phone" name="phoneNumber" required/>
           </div>
-          <div>
+          <div class="mb-1">
             <label for="pwd">PASSWORD</label><br />
-            <input type="password" id="pwd" name="password" />
+            <input type="password" id="pwd" name="password" maxlength="32" required/>
           </div>
-          <div>
+          <div class="mb-1">
             <label for="confirm-pwd">CONFIRM PASSWORD</label><br />
-            <input type="password" id="confirm-pwd" name="confirmPassword" />
+            <input type="password" id="confirm-pwd" name="confirmPassword" required/>
           </div>
         </form>
       </div>
 
-      <div class="container create-account">
-        <button type="button" class="margin-left-5">Creat Account</button>
-        <div class="sign-up-container margin-left-5">
+      <div class="account-container">
+        <button type="submit" class="margin-left-5">Creat Account</button>
+        <div class="signup-container margin-left-5">
           <p>
             Already have an account?
             <a href="#">Log in</a>
